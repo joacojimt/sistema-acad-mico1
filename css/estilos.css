@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fb;
+}
+
+.header {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #1e3fae;
+    padding: 35px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__logo {
+    background-color: #1fc3f0;
+    border-left: 3px solid white;
+    padding: 8px 12px;
+    margin-bottom: 50px;
+}
+
+.header__titulo {
+    color: white;
+    font-size: 18px;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.header__lista {
+    list-style: none;
+}
+
+.header__enlace {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+}
+
+.header__enlace:hover {
+    background-color: #3a58c4;
+}
+
+.header__enlace--activo {
+    background-color: #3a58c4;
+    font-weight: bold;
+}
+
+.header__enlace--config {
+    margin-bottom: 0;
+}
+
+.header__icono {
+    width: 32px;
+    font-size: 26px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.header__icono--negro {
+    color: #000000;
+}
+
+.header__icono--verde {
+    color: #1aa34a;
+}
+
+.header__icono--morado {
+    color: #8b3dff;
+}
+
+.header__icono--naranja {
+    color: #ff9f1c;
+}
+
+.header__icono--rojo {
+    color: #f0431a;
+}
+
+.header__icono--gris {
+    color: #e6e6e6;
+}
+
+.contenido {
+    flex: 1;
+    padding: 40px;
+}
+
+.bienvenida {
+    margin-bottom: 24px;
+}
+
+.bienvenida__titulo {
+    font-size: 22px;
+    font-weight: normal;
+    color: #111111;
+}
+
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.estadisticas__tarjeta {
+    background-color: #bfe3ff;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.estadisticas__etiqueta {
+    font-size: 22px;
+    color: #111111;
+}
+
+.estadisticas__numero {
+    font-size: 44px;
+    color: #111111;
+    margin-top: 4px;
+}
+
+.accesos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 800px;
+}
+
+.accesos__tarjeta {
+    background-color: #bfe3ff;
+    border-radius: 24px;
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.accesos__titulo {
+    font-size: 28px;
+    font-weight: normal;
+    color: #111111;
+}
+
+.accesos__texto {
+    font-size: 18px;
+    color: #111111;
+    margin: 4px 0 16px;
+}
+
+.accesos__boton {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 6px;
+}
+
+.accesos__boton:hover {
+    background-color: #1d4ed8;
+}
+
+@media (max-width: 900px) {
+    .estadisticas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .accesos {
+        grid-template-columns: 1fr;
+    }
+}
